@@ -1,11 +1,12 @@
-First run 
-
-```shell
-sudo send-track-icmp-request.py 1.2.3.4
-``` 
-then run 
+ 
+first run `Ripple20-ICMP-POC.py` sniff interface 
 
 ```shell
 sudo Ripple20-ICMP-POC.py eth0
 ``` 
-sniff interface and detect ICMP reply
+
+then send special ICMP request to target
+
+```shell
+sudo send-track-icmp-request.py 1.2.3.4
+```
