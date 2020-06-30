@@ -1,1 +1,11 @@
-First run `send-track-icmp-request.py` then run `Ripple20-ICMP-POC.py` detect ICMP reply
+First run 
+
+```shell
+sudo send-track-icmp-request.py 1.2.3.4
+``` 
+then run 
+
+```shell
+sudo Ripple20-ICMP-POC.py eth0
+``` 
+sniff interface and detect ICMP reply
