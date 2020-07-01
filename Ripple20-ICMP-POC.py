@@ -13,7 +13,7 @@ def process_packet(pkt):
         if pkt[ICMP].type == 0xa5:
             data = bytes(pkt[ICMP].payload)
             if b'\x01\x51\x35\x28\x57\x32' in data or b'\x51\x01\x28\x35\x32\x57' in data:
-                print (f"Find Vulnerable device: {pkt[IP].src}")
+                print (f"Find potential vulnerable device: {pkt[IP].src}")
                 print (f"Recived icmp data:")
                 hexdump(pkt[ICMP].payload)
 
